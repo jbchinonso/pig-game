@@ -57,9 +57,8 @@ document.querySelector('.btn-roll').addEventListener('click',function(){
 document.querySelector('.btn-hold').addEventListener('click',function(){
  if(gaming)  { 
     player.score += player.round_score;
-   let endScore = document.querySelector('.win-score').value;
+    let endScore = document.querySelector('.win-score').value;
     endScore > 0 ? win_score = endScore : win_score = 100
-    console.log(endScore);
     document.querySelector('.player-'+ player.id + '-score').textContent = player.score;
     if(player.score >= win_score){
         document.querySelector('.player-'+player.id+'-name').textContent = "winner"
