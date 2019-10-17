@@ -1,0 +1,129 @@
+
+
+body{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.6),rgba(0,0,0,0)), url(images/gaming-background.jpeg);
+    background-position-x: 0px;
+    background-position-y: 0px;
+    
+}
+#wrapper{
+    width:80%;
+    height: 600px;
+    margin: 50px auto;
+    background: azure;
+    border: 2px solid lightgray;
+}
+.player-1-box{
+    width:40%;
+    float: left;
+    height: inherit;
+
+}
+
+.controls{
+    width: 20%;
+    float: left;
+    height: inherit;
+}
+
+
+.player-2-box{
+    width:40%;
+    float: left;
+    height: inherit;
+    
+}
+
+.active{
+    background: rgba(158, 185, 176, 0.548);
+    width: 40%;
+
+}
+
+.player-1-name{
+    text-align: center;
+    font-display: verdana;
+    font-size: 25px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.player-1-score{
+    text-align: center;
+    font-display: verdana;
+    font-size: 15em;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.player-2-name{
+    text-align: center;
+    font-display: verdana;
+    font-size: 25px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.player-2-score{
+    text-align: center;
+    font-display: verdana;
+    font-size: 15em;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.player-1-round-score{
+    width: 100px;
+    height: 10vh;
+    position: absolute;
+    background: burlywood;
+    padding: 5px;
+    bottom:10vh;
+    text-align: center;
+    line-height: 3;
+    font-size: 30px;
+}
+
+.player-2-round-score{
+    width: 100px;
+    height: 10vh;
+    position: absolute;
+    background: burlywood;
+    padding: 5px;
+    bottom:10vh;
+    text-align: center;
+    line-height: 3;
+    font-size: 30px;
+}
+.new-game{
+    display: block;
+    width: 150px;
+    padding: 8px;
+    margin-top: 30px;
+    border: 0px;
+    background: azure;
+}
+
+img{
+    margin-top: 30px;
+    width: 150px;
+    height: 15vh;
+}
+
+.btn-roll{
+    display: block;
+    width: 150px;
+    padding: 8px;
+    margin-top: 10em;
+    border: 0px;
+    background: azure;
+}
+
+.btn-hold{
+    display: block;
+    width: 150px;
+    padding: 8px;
+    margin-top: 30px;
+    border: 0px;
+    background: azure;
+}
