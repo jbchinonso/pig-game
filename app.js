@@ -29,10 +29,12 @@ function init(){
     document.querySelector('.player-1-score').textContent = 0;
     document.querySelector('.player-2-score').textContent = 0;
     document.querySelector('.player-'+ player.id + '-round-score').textContent = 0
-    document.querySelector('.player-1-box').classList.toggle('active')
-    document.querySelector('.player-2-box').classList.toggle('active')
+    document.querySelector('.player-1-box').classList.add('active')
+    document.querySelector('.player-2-box').classList.remove('active')
     document.querySelector('.player-'+player.id+'-name').textContent = player.name
     document.querySelector('.player-'+ player.id +'-name').classList.remove('winner')
+    document.querySelector('.dice1').style.display = "none";
+    document.querySelector('.dice2').style.display = "none";
     player1 = new Player('player 1',1, 0, 0)
     player2 = new Player('player 2',2, 0, 0)
     player = player1
@@ -42,12 +44,15 @@ function init(){
 player1 = new Player('player 1',1, 0, 0)
 player2 = new Player('player 2',2, 0, 0)
 player = player1
-let endScore = 6
+document.querySelector('.dice1').style.display = "none";
+document.querySelector('.dice2').style.display = "none";
 
 
 document.querySelector('.btn-roll').addEventListener('click',function(){
    if(gaming){
     player.play();
+    document.querySelector('.dice1').style.display = "block";
+    document.querySelector('.dice2').style.display = "block";
     if(dice1 == 1 || dice2 == 1 || dice1 == 6 && dice2 == 6){ 
         nextPlayer();
     }

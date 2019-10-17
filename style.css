@@ -80,24 +80,22 @@ body{
 .player-1-round-score{
     width: 100px;
     height: 10vh;
-    position: absolute;
     background: burlywood;
     padding: 5px;
-    bottom:10vh;
+    margin: 0 auto;
     text-align: center;
-    line-height: 3;
+    line-height: 2;
     font-size: 30px;
 }
 
 .player-2-round-score{
     width: 100px;
     height: 10vh;
-    position: absolute;
     background: burlywood;
     padding: 5px;
-    bottom:10vh;
+    margin: 0 auto;
     text-align: center;
-    line-height: 3;
+    line-height: 2;
     font-size: 30px;
 }
 .new-game{
