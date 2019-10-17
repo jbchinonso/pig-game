@@ -40,6 +40,11 @@ body{
 
 }
 
+.winner{
+    color:rgb(23, 173, 61);
+    
+}
+
 .player-1-name{
     text-align: center;
     font-display: verdana;
@@ -104,6 +109,11 @@ body{
     background: azure;
 }
 
+.new-game:focus{
+    outline: 0px;
+    cursor: pointer;
+}
+
 img{
     margin-top: 30px;
     width: 150px;
@@ -112,18 +122,43 @@ img{
 
 .btn-roll{
     display: block;
+    position: absolute;
     width: 150px;
     padding: 8px;
-    margin-top: 10em;
+    bottom: 25vh;
     border: 0px;
     background: azure;
 }
 
+.btn-roll:focus{
+    cursor: pointer;
+    outline: 0px;
+}
+
 .btn-hold{
     display: block;
+    position: absolute;
     width: 150px;
     padding: 8px;
-    margin-top: 30px;
+    bottom: 18vh;
     border: 0px;
     background: azure;
+    cursor: pointer;
+}
+.btn-hold:focus{
+    outline: 0px;
+    cursor: pointer;
+}
+.win-score{
+    display: block;
+    position: absolute;
+    width: 150px;
+    padding: 8px;
+    bottom: 12vh;
+   text-align: center;
+   text-transform: uppercase;
+    background: azure;
+}
+.win-score:focus{
+    outline: 5px;
 }
