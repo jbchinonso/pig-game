@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link  href = "style.css" rel="stylesheet">
+    <link  href = "font-awesome.css" rel="stylesheet">
+    <link  href = "bootstrap.min.css" rel="stylesheet">
+    <title>Pig Game</title>
+</head>
+<body>
+    <section id = "wrapper">
+        <div class="player-1-box active">
+            <div class="player-1-name">player 1</div>
+            <div class="player-1-score">0 </div>
+            <div class="player-1-round-score">0</div>
+        </div>
+
+
+        <div class="controls">
+            <button class="new-game"> <i class = "fa fa-bell"></i> New Game </button>
+            <img src="images/dice-4.png" alt="dice game" class="dice1">
+            <img src="images/dice-6.png" alt="dice game" class="dice2">
+            <button class="btn-roll"><i class = "fa fa-bitbucket"></i> Roll Dice</button>
+            <button class="btn-hold"><i class = "fa fa-anchor"></i> Hold</button>
+            <input type="text"  placeholder="Enter Winning Score" class="win-score" />
+        </div>
+
+
+        <div class="player-2-box">
+            <div class="player-2-name">player 2</div>
+            <div class="player-2-score">0 </div>
+            <div class="player-2-round-score">0</div>
+        </div>
+        
+    </section>
+    <script src = "app.js"></script>
+</body>
+</html>
